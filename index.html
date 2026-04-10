@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Musa System</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musa System — Expertos en B2B</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0a0a0a;
-  color: white;
-}
+  <style>
+    body {
+      margin: 0;
+      background: #0a0a0a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
-/* HERO */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 48px;
-  overflow: hidden;
-}
+    /* HERO BASE (tuyo simplificado pero intacto visualmente) */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+      position: relative;
+      overflow: hidden;
+    }
 
-/* VIDEO */
-.hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  opacity: 0.45;
-}
+    /* VIDEO */
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.4;
+    }
 
-/* OVERLAY */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.85));
-  z-index: 1;
-}
+    /* OVERLAY */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10,10,10,0.6), rgba(10,10,10,0.85));
+      z-index: 0;
+    }
 
-/* CONTENT */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
+    /* CONTENIDO */
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
 
-h1 {
-  font-size: 72px;
-  line-height: 0.9;
-  margin-bottom: 24px;
-}
+    h1 {
+      font-size: 72px;
+      line-height: 0.9;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
 
-.accent { color: #CC0000; }
+    .accent { color: #CC0000; }
 
-.hero-sub {
-  font-size: 18px;
-  color: #ccc;
-  margin-bottom: 32px;
-}
+    .hero-sub {
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 32px;
+    }
 
-.btn {
-  padding: 14px 28px;
-  border: 1px solid white;
-  text-decoration: none;
-  color: white;
-  margin-right: 10px;
-}
+    .btn {
+      padding: 14px 28px;
+      border: 1px solid white;
+      text-decoration: none;
+      color: white;
+      margin-right: 10px;
+    }
 
-.btn-primary {
-  background: #CC0000;
-  border: none;
-}
-</style>
+    .btn-primary {
+      background: #CC0000;
+      border: none;
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
 
   <!-- VIDEO BACKGROUND -->
@@ -99,11 +101,12 @@ h1 {
     </h1>
 
     <p class="hero-sub">
-      Dejá de vender por WhatsApp. Automatizá tu canal B2B.
+      Dejá de perder ventas por WhatsApp.<br>
+      Automatizá tu canal B2B y vendé 24/7.
     </p>
 
     <a href="#" class="btn btn-primary">Quiero digitalizar</a>
-    <a href="#" class="btn">Ver más</a>
+    <a href="#" class="btn">Ver servicios</a>
   </div>
 
 </section>
