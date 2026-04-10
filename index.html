@@ -17,12 +17,6 @@
   opacity: 0.5; /* ajustá según contraste */
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
-  z-index: 0;
-}
     
     :root {
       --red: #CC0000;
@@ -954,7 +948,45 @@
       height: 28px;
       fill: white;
     }
+.hero-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(64px, 9vw, 120px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-weight: 300; /* base light */
+  text-transform: uppercase;
+}
 
+.hero-title .bold {
+  font-weight: 600;
+}
+
+.hero-title .italic {
+  font-style: italic;
+}
+
+.hero-title .accent {
+  color: #CC0000;
+}
+
+.hero-title .soft {
+  opacity: 0.85;
+  font-weight: 300;
+}
+
+.hero-title span {
+  display: inline-block;
+}
+
+.hero-title {
+  text-wrap: balance;
+}
+   .hero-title .italic {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.02em;
+}
+
+    
     @keyframes pulse {
       0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
       50% { box-shadow: 0 4px 32px rgba(37,211,102,0.7); }
@@ -1060,16 +1092,17 @@
   </video>
 
   <!-- OVERLAY para contraste -->
-  <div class="hero-overlay"></div>    
     <div class="hero-grid-bg"></div>
     <div class="hero-glow"></div>
     <div class="hero-content">
       <div class="hero-label">La única agencia argentina especializada en B2B</div>
-      <h1>
-        Tu tienda<br>
-        <span class="accent">B2B</span><br>
-        <span class="outline">sin límites</span>
-      </h1>
+
+<h1 class="hero-title">
+  <span class="italic bold">Tu tienda</span><br>
+  <span class="accent">B2B</span><br>
+  <span class="soft">sin límites</span>
+</h1>
+      
       <p class="hero-sub">
         Dejá de perder ventas porque tus clientes B2B te piden por WhatsApp.<br>
         <strong>Tu mejor vendedor trabaja 24/7 y no pide aumento.</strong>
